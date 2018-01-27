@@ -1,0 +1,218 @@
+body{
+ background: -moz-linear-gradient(left, rgba(2,55,100,1) 0%, rgba(11,173,218,0.32) 25%, rgba(11,173,218,0) 37%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(2,55,100,1) 0%,rgba(11,173,218,0.32) 25%,rgba(11,173,218,0) 37%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(2,55,100,1) 0%,rgba(11,173,218,0.32) 25%,rgba(11,173,218,0) 37%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+    .bgo1{
+        position: absolute;
+        z-index: -3;
+        top: 5%;
+        right: 0%;
+    }
+    
+     .bgo2{
+        position: absolute;
+         z-index: -3;
+         bottom: 0%;
+        right:0%; 
+    }
+
+
+.sciana{
+    position: absolute;
+    width: 75%;
+    z-index: -2;
+    background-color: seashell;
+    border-left: black 6px solid;
+    border-bottom: black 6px solid;
+}
+
+.podloga{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+     border-left: black 6px solid;
+    border-bottom: #023764 15px solid;
+}
+
+.drzwi{
+    position: absolute;
+    margin-top: 2.4%;
+    left: 20%;
+    width: 35%;
+    z-index: 0;
+    background-color: burlywood;
+    box-shadow: 0px 0px 10px dimgray;
+  
+    
+}
+
+.roslinka{
+    position: absolute;
+    margin-top: 43%;
+    left: 58%;
+    height: auto;
+    width:30%;
+    z-index: 0;
+    
+}
+
+.roslinka2{
+    position: absolute;
+    margin-top: 60%;
+    left: 2%;
+    height: auto;
+    width:22%;
+    z-index: 0;
+    
+}
+    
+
+.okno{
+    position: absolute;
+    margin-top: 2.4%;
+    left: 15%;
+    background-color: burlywood;
+    box-shadow: 0px 0px 10px dimgray;
+    width: 50%;
+    z-index: 1;
+
+   
+
+}
+
+.drzwid{
+    position: absolute;
+    margin-top: 2.4%;
+    left: 20%;
+    width: 35%;
+    height: auto;
+    z-index: 2;
+    background-color: burlywood;
+    box-shadow: 0px 0px 10px dimgray;
+    display: none;
+   
+}
+    
+
+.oknod{
+    position: absolute;
+    margin-top: 2.4%;
+    left: 15%;
+    background-color: burlywood;
+    box-shadow: 0px 0px 10px dimgray;
+    width: 50%;
+    z-index: 1;
+    display: none;
+    
+}
+
+.proleta{
+    position: absolute;
+    margin-top: 3.5%;
+    left: 38%;
+    background-color: burlywood;
+    box-shadow: 0px 0px 10px dimgray;
+    width: 23.5%;
+    z-index: 2;
+}
+
+.lroleta{
+    position: absolute;
+    margin-top: 3.5%;
+    left: 17.2%;
+    background-color: burlywood;
+    box-shadow: 0px 0px 10px dimgray;
+    width: 15%;
+    z-index: 2;
+}
+
+
+#colorod{
+    display: none;
+}
+
+#colordd{
+    display: none;
+}
+
+.btn-secondary{
+    margin:  2px ;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(248,248,248, 1);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary:hover{
+   box-shadow: 0px 0px 20px inset rgba(255,255,255, 1);
+}
+
+.card{
+    background: rgba(200,200,200, 0.5);
+}
+#w990{
+    display: none;
+    z-index: 3;
+    position: absolute;
+    bottom: 0%;
+    max-height: 200px;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .drzwi {
+        top: 40%;
+    }
+    #w991{
+        display: none;
+    }
+    #w990{
+        display: block;
+    }
+    .btn-secondary{
+    margin:  1px;
+    height: 20px;
+    font-size: 10px;
+}
+    h6{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .drzwi {
+        top: 26%;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .drzwi {
+       top: 15%;
+        left: 12%;
+    }
+}
+
+@media only screen and (max-width: 372px) {
+    .drzwi {
+       top: 12%;
+        left: 16%;
+    }
+     .okno {
+       top: 30%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .drzwi {
+       top: 10%;
+        left: 20%;
+    }
+     .okno {
+       top: 15%;
+    }
+}
+
+  

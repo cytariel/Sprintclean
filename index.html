@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sprint</title>
+    <meta name="description" content="Strona Firmy">
+    <meta name="author" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,400|Montserrat:600,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style1.css">
+
+    <!--Skryp zaczynania od gory-->
+    <script>
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        }
+
+    </script>
+
+    <!-- Skrypt "Zaluzji"   -->
+    <script>
+        $(document).ready(function() {
+            $("#curtain").click(function() {
+                $("#curtain").slideUp(20 * 60);
+                $("#curtain_bar").slideUp(20 * 60);
+            });
+        });
+
+    </script>
+    <!-- Blokada Scrollowania       -->
+    <script>
+        $('html, body').css({
+            overflow: 'hidden',
+            height: '100%'
+        });
+
+    </script>
+    <!--   Odblokowanie Scrollowania -->
+    <script>
+        $(document).ready(function() {
+            $("#curtain").click(function() {
+                $('html, body').css({
+                    overflow: 'auto',
+                    height: 'auto'
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!--landing page-->
+
+    <div class="curtain" id="curtain">
+        <div class="curtain_mid">
+            <div class="row">
+                <div class="col-12 justify-content-center align-items-center">
+                    <img src="img/llogo.png" class="img-responsive" />
+                    <h1>
+                      drzwi okna bramy rolety
+                    </h1>
+                </div>
+             </div>
+        </div>
+        <div class="curtain_bar" id="curtain_bar">
+        </div>
+    </div>
+
+
+    <!--Index page-->
+
+
+    <!-- Navigation -->
+    <div class="container-fluid-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top slideInDown">
+            <a class="navbar-brand" href="./index.html">
+                    <img src="./img/loggoo.png" height="35"/>
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-group1">
+                        <a class="nav-link dropdown-toggle dropdown-toggle1" href="#" id="okna-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-file"></i> <span class="nav-text">Oferta</span></a>
+                        <div class="dropdown-menu dropdown-menu1" aria-labelledby="okna-link">
+                            <a class="dropdown-item" href="./subpages/dropdown-subpages/Drzwizewnetrzne.html"><i class="fas fa-arrow-right"></i>Drzwi zewnetrzne</a>
+                            <a class="dropdown-item" href="./subpages/dropdown-subpages/Drzwiwewnetrzne.html"><i class="fas fa-arrow-right"></i>Drzwi wewnetrzne</a>
+                            <a class="dropdown-item" href="./subpages/dropdown-subpages/Oknapcv.html"><i class="fas fa-arrow-right"></i>Okna PCV</a>
+                            <a class="dropdown-item" href="./subpages/dropdown-subpages/Oknaaluminiowe.html"><i class="fas fa-arrow-right"></i>Okna Aluminiowe</a>
+                            <a class="dropdown-item" href="./subpages/dropdown-subpages/Bramy.html"><i class="fas fa-arrow-right"></i>Bramy</a>
+                            <a class="dropdown-item" href="./subpages/dropdown-subpages/Rolety.html"><i class="fas fa-arrow-right"></i>Rolety</a>
+                            <a class="dropdown-item" href="./subpages/dropdown-subpages/Markizy.html"><i class="fas fa-arrow-right"></i>Markizy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./subpages/galeria.html"><i class="fas fa-images"></i><span class="nav-text">Galeria</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./subpages/kontakt.html"><i class="fas fa-phone"></i> <span class="nav-text">Kontakt</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./subpages/blog.html"><i class="far fa-edit"></i><span class="nav-text"> Smart-Okna</span></a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-group2">
+                        <a class="nav-link dropdown-toggle dropdown-toggle2" href="#" id="okna-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="far fa-building"></i> <span class="nav-text">Wizualizacja</span></a>
+                        <div class="dropdown-menu dropdown-menu2" aria-labelledby="okna-link">
+                            <a class="dropdown-item" href="./subpages/wizualizacja/wizualizacjadrzwi.html"><i class="fas fa-arrow-right"></i>Drzwi</a>
+                            <a class="dropdown-item" href="./subpages/wizualizacja/wizualizacjaokno.html"><i class="fas fa-arrow-right"></i>Okno</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container fadeIn">
+
+        <div class="row justify-content-center">
+           <div class="col-6 text-right front ">
+             <h1>Odkrywamy <br>okna<br>na nowo</h1>
+           </div>
+            <div class="col-5">
+                <img src="img/okno.png" class="intro window"  />
+            </div>
+         </div>
+      
+
+    <div class="row"><div class="col-12"><br><br></div></div>
+
+        <div class="row">
+          <div class="col-7 text-center">
+              <span><h1>Smart-Okno</h1><hr></span>
+
+        </div>
+      </div>
+
+
+
+       <!--article1-->
+
+        <div class="col-4" style="margin-left: -19%;">
+            <img src="img/smarto.png" class="smart"/>
+        </div>
+            <div class="col-6 offset-6 text-justify description">
+
+
+                 <p>SmartWindow doskonale wpisuje się w ideę inteligentnego budownictwa propagowaną na całym świecie.Rewolucyjne okno jest kompatybilne z innymi systemami i urządzeniami IoT w domu. Drutex ktory produkuje ten fenomen stolarki kilka miesięcy temu zaoferował Klientom możliwość tworzenia inteligentnych systemów pozwalających na zdalne sterowanie stolarką. To był tylko pierwszy krok w kierunku innowacyjnych technologii. Nowy produkt idealnie integruje się z dotychczas oferowanymi przez firmę elementami inteligentnego domu Tahoma czy Maco poprzez wsparcie dla panelu sterowania, który to wyświetlony jest wprost na oknie. Dzięki temu klient nie potrzebuje żadnych dodatkowych urządzeń, aby sterować swoim domem, co zapewnia pełną kontrolę dostępu i bezpieczeństwo dla całej rodziny. Takie rozwiązanie stwarza również lepsze możliwości zarządzania czasem i przestrzenią w domu.
+                </p>
+
+            </div>
+        
+
+            <!--article2-->
+
+     
+
+            <div class="col-md-4 ">
+                <img src="img/tp.png" class="tp">
+              </div>
+              <div class="col-md-7 text-justify ttp ">
+                <h2>Technologia przyszłosci</h2>
+                <p> Firma Drutex wprowadziła na rynek innowacyjny produkt na miarę przyszłości. Nowe interaktywne okno pozwalające na prezentację treści multimedialnych to rewolucja na światowym rynku stolarki okienno-drzwiowej. Firma stworzyła pierwsze inteligentne okno, które poza swoimi standardowymi funkcjami oferuje możliwość oglądania telewizji, korzystania z Internetu i pracy na panelu bezdotykowym. Swoim innowacyjnym rozwiązaniem Drutex wpisuje się w światowy trend rozwiązań z zakresu IoT (Internet of Things).
+                </p>
+                <div>
+
+            </div>
+
+            <!--article3-->
+       
+            <div class="col-md-3">
+              <img src="img/pk.png" class="pk">
+            </div>
+
+            <div class="col-14 text-justify tpk">
+
+
+                <h2>Pełna kompatybilność</h2>
+                <p>Do okna można podłączyć pendrive lub dysk przenośny z danymi multimedialnymi, klawiaturę oraz myszkę. Istnieje również opcja wykorzystania domowej sieci komputerowej celem podłączenia okna do Internetu, co stwarza zupełnie nowe możliwości funkcjonalne okna. Od dziś oglądanie filmów z YouTube, galerii zdjęć czy przeglądanie informacji w popularnych kanałach internetowych podczas codziennych czynności takich jak gotowanie, przeglądanie maili, czy oglądanie ulubionych programów i seriali na oknie, stało się rzeczywistością. Drutex stworzył okno, które zastępuje funkcje telewizji, tabletu czy narzędzia do pracy. To również możliwość wykorzystania wirtualnych żaluzji czy markiz chroniących przed światłem i zaciemniających pomieszczenia dla jeszcze większego komfortu użytkowników.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 200px;">
+            <div class="col-md-3 text-center">
+
+                <img src="img/dit.png"class="icon">
+                <h2>Doświadczenie i tradycja</h2>
+                <p> Ponad 30-letnie doświadczenie w tworzeniu wysokiej jakości produktów, w tym pełna kontrola na każdym etapie produkcji okien, które tworzone są od A do Z.
+                </p>
+
+            </div>
+
+            <div class="col-md-3 text-center">
+
+                <img src="img/rs.png" class="icon">
+                <h2>Rozwiązania szyte na miarę </h2>
+                <p> Autorskie produkty tworzone przez własny dział B+R są w pełni zindywidualizowane i dopasowane do aktualnych trendów architektonicznych i potrzeb klientów.
+                </p>
+
+            </div>
+
+            <div class="col-md-3 text-center">
+
+                <img src="img/lp.png"class= "icon">
+                <h2>Lokalni Producenci</h2>
+                <p> Korzystamy z usług lokalnych producentów, Wszystkie produkty w naszej ofercie zostały stworzone w Polsce. W dużej mierze w Bydgoszczy oraz wojewodztwie Kujawsko-Pomorskim.
+                <!-- </p> -->
+
+            </div>
+
+            <div class="col-md-3 text-center">
+
+                <img src="img/sz.png" class="icon">
+                <h2>Szybkość działania</h2>
+                <p> 7-dniowe terminy realizacji zamówień wraz z dostawą w całej Europie, dzięki elastyczności, sprawności działania i własnej flocie transportowej
+                </p>
+
+            </div>
+        </div>
+        
+
+
+
+        <div class="row" style="margin-top: 200px;"><div class="col-6 offset-6" >
+        <span class="text-center"><H1>Porady<br>dla<br>każdego</H1><hr></span>
+        </div></div>
+
+   
+        <!--                    Blog-->
+
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <section>
+                            <div class="row">
+
+                                <div class="col-sm-5">
+                                    <img src="./img/aa1.jpg" alt="Zdjęcie" class="img-fluid float-left thumbnail">
+                                </div>
+                                <div class="col-sm-6 article text-justify">
+                                    <a href="#">
+                                        <h2> Konserwacja Okien </h2>
+                                    </a>
+                                    <p>Aby przedłużyć żywotność i zachować dobry wygląd okien i drzwi należy stosować odpowiednie zabiegi pielęgnacyjne i konserwacyjne do których należy: stosowanie środków myjących, konserwacja uszczelek, smarowanie zawiasów i okuć obwiedniowych...
+                                    </p>
+                                    <a href="#" class="btn">Czytaj Dalej...</a>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+                        <section>
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <img src="./img/aa1.jpg" alt="Zdjęcie" class="img-fluid float-left thumbnail">
+                                </div>
+                                <div class="col-sm-6 article text-justify">
+                                    <a href="#">
+                                        <h2 class="text-left"> Łatwe sposoby na optyczne powiększenie mieszkania </h2>
+                                    </a>
+                                    <p>Kawalerki i małe, kompaktowe mieszkania wymagają od domowników pomysłowości i umiejętności designerskich, żeby nieduży metraż urządzić w sposób funkcjonalny, a jednocześnie estetyczny. Wszyscy chcemy, aby mieszkanie było przytulne, piękne, ale też musi oferować przestrzeń z wieloma możliwościami, bo przecież w takich pomieszczeniach liczy się każdy centymetr.</p>
+                                    <a href="#" class="btn">Czytaj Dalej...</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+
+
+
+                    <!--blogside-->
+                    <div class="col-md-3 sidebar" style="padding-top: 15%;">
+                        <h2>Wyszukiwanie</h2>
+                        <p >Szukasz czegoś konkretnego?</p>
+                        <form>
+                            <input class="form-control" id="myInput" type="text" placeholder="Szukaj..">
+                        </form>
+
+                        <h3>Ostatnie Artykuły</h3>
+                        <a href=""> Konserwacja Okien </a><br>
+                        <a href=""> Łatwe sposoby na optyczne powiększenie mieszkania </a><br>
+
+                        <!--pagination-->
+                        <ul class="pagination justify-content-center pt-5">
+                            <li class="page-item disabled"><a class="page-link" href="#">Starsze</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Nowsze</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+        <div class="row" style="margin-left: -7%; margin-top: 200px;"><div class="col-6">
+        <span><H1>Partnerzy</H1><hr></span>
+            
+        </div></div>
+
+
+        <!--Strony z ktorymi wspolpracujemy-->
+
+
+        <!--rzad 1-->
+        <div class="row">
+            <div class="col-sm"  style="padding-bottom: 5%;">
+                <a href="http://centurion.com.pl">  <img class="b1" src="./img/centurion.png" alt="centurion"> </a>
+            </div>
+            <div class="col-sm">
+                <a href="http://erkado.pl">   <img class="b1" src="./img/erkado.png" alt="erkado"> </a>
+            </div>
+            <div class="col-sm">
+                <a href="http://fartprodukt.pl">   <img class="b1" src="./img/fart.png" alt="fart"> </a>
+            </div>
+            <div class="col-sm">
+                <a href="http://intenso-doors.pl">  <img class="b1" src="./img/intenso.png" alt="intenso"> </a>
+            </div>
+            <hr>
+        </div>
+
+        <!--rzad 2-->
+        <div class="row">
+            <div class="col-sm-3"  style="padding-bottom: 5%;">
+                <a href="http://aludoor.net">  <img class="b1" src="./img/aludoor.png" alt="aludoor"> </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://kmt.com.pl">  <img class="b1" src="./img/kmt.png" alt="kmt"> </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://pol-skone.pl">  <img class="b1" src="./img/polskoni.png" alt="pol-skoni"> </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://wiked.pl">  <img class="b1" src="./img/companies/wiked.png" alt="wiked"> </a>
+            </div>
+
+        </div>
+    </div>
+
+
+        <!-- Button to Open the Visit-Modal -->
+        <button type="button" class="btn btn-success btn-modal" data-toggle="modal" data-target="#wizytaModal">
+ 			 Umów wizytę!
+			</button>
+
+
+    <!--sociale-->
+    <div class="social">
+        <ul>
+            <li   class="social-fb"><a href="#"><span class="social-text">Facebook</span><i class="social-icon fab fa-facebook-square"></i></a></li>
+            <li class="social-gp"><a href="#"><span class="social-text">Google +</span><i class="social-icon fab fa-google-plus"></i></a></li>
+            <li class="social-ig"><a href="#"><span class="social-text">Instagram</span><i class="social-icon fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Modal Wizyty -->
+    <div class="modal fade" id="wizytaModal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content ">
+
+                <!-- Modal Wizyty Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Umów się na wizyte!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p class="mt-2 text-muted text-left">Proszę wypełnić poniższy formularz w celu podania niezbędnych danych do wizyty: </p>
+                    <form action="mailto:sprint.wizyty@gmail.com" method="post" enctype="text/plain" id="wizytaForm">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <input onchange="formValidate()" type="text" id="imie" name="imie" placeholder="Imię" requiered="required"><br>
+                                <input onchange="formValidate()" class="mt-1" type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" requiered="required"><br>
+                                <input onchange="formValidate()" class="mt-1" type="text" id="tele" name="tele" placeholder="Numer telefonu" requiered="required"><br>
+                                <input onchange="formValidate()" class="mt-1" type="text" id="adres" name="adres" placeholder="Adres" requiered="required"><br>
+                                <input onchange="formValidate()" class="mt-1" type="number" id="ilosc" name="ilosc" placeholder="Ilość przedmiotów" requiered="required"><br>
+                                <input onchange="formValidate()" class="mt-1" type="date" id="date" name="date" requiered="required"><br>
+                                <textarea onchange="formValidate()" class="mt-3" name="uwagi" id="uwagi" placeholder="Wiadomość dla usługodawcy" requiered="required"></textarea>
+                            </div>
+                        </div>
+                        <p class="mt-2 text-muted text-center">Data wizyty nie może być wcześniejsza niż 3 dni od dnia zgłoszenia.</p>
+                        <p class="text-muted text-center">Wizyta zostanie potwierdzona telefonicznie dzień przed wizytą</p>
+                    </form>
+
+                </div>
+
+                <!-- Modal Wizyty footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#successModal" data-dismiss="modal">Wyślij</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Anuluj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Potwierdzenia -->
+    <div class="modal fade" id="successModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content ">
+                <!-- Modal Potwierdzenia body -->
+                <div class="modal-body">
+                    <p>Zgłoszenie zostało wysłane!</p>
+                    <p>Zostanie ono potwierdzone telefonicznie lub mailowo w czasie nie dłuższym niż 2 dni.</p>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script type="text/javascript" src="./js/jquery.min.js"></script> -->
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/jquery.maskedinput.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+/*galeria*/
+
+.gallery-box-parent {
+    width: 75vw;
+    margin: auto;
+}
+
+.gallery-box .col-md-6,
+.gallery-box .col-md-3,
+.gallery-box .col-md-2,
+.gallery-box .col-md-1,
+.gallery-box .col-md-4 {
+    padding: 3px;
+    z-index: 9;
+}
+
+.img-fluid {}
+
+.big-row {}
+
+.xsmall-row .img-fluid {
+    height: 10vh;
+}
+
+.small-row .img-fluid {
+    height: 20vh;
+}
+
+.medium-row .img-fluid {
+    height: 100%
+}
+
+.third-row .img-fluid {
+    height: 100%;
+}
+
+.list-img-medium img {
+    height: 49.5%;
+}
+
+.img-main {
+    z-index: 30;
+    height: 100%;
+}
+
+.gallery-header {
+    color: #161616;
+    font-family: "Lobster";
+    text-shadow: none;
+    border-bottom: 1px solid #161616;
+}
+
+#gallery-heading {
+    font-family: "Lobster";
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    color: white;
+
+}
+
+.gallery-list li {
+    margin-left: -3px;
+}
+
+
+.gallery-list a img {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: 2px black solid;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.gallery-list a img:hover {
+    box-shadow: 5px 5px #222222;
+    transform: translateX(-5px);
+}
+.img-list {
+    width: 100px;
+    height: 100px;
+}
+#modal-img {
+    min-width: 50vw;
+    width: 55vw;
+}
+
+.modal-lg {
+    min-width: 57vw;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-list-rwd {
+    display: none;
+}
+
+.modal-img-size {
+    padding: 0;
+}
+
+.img-fluid-gallery {
+    margin: auto;
+    width: 80vw;
+    height: 85vh;
+}
+
+.modal-content-gallery > .modal-body {
+    border: 0px!important;
+}
+
+@media only screen and (min-width: 768px) {
+    .gallery-modal .modal {
+        top: 3vh;
+        left: -49vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery-box {
+        display: none;
+    }
+    .gallery-list-rwd {
+        display: block;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .modal-img-size {
+        height: 90vh;
+        width: 10vw;
+        padding: 0;
+        margin: 2px;
+    }
+    .img-fluid-gallery {
+        width: 93vw;
+        height: 90vh;
+    }
+}

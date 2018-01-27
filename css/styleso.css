@@ -1,0 +1,247 @@
+/*Smart okno*/
+
+.smart1{
+    width: 90vw;
+    height: 90vh;
+}
+
+#s1{
+    position: absolute;
+    z-index: 2;
+    height: auto;
+    width: 90%;
+}
+
+#s2{
+    position: absolute;
+    z-index: 2;
+    height: auto;
+    width: 90%;
+}
+
+.s2{
+    position: absolute;
+    display: none;
+    width: 90%;
+    height: auto;
+    z-index: 1;
+
+}
+
+
+.splash{
+    position: absolute;
+    width: 77%;
+    margin-left: 6%;
+    height: auto;
+    opacity: 0.6;
+    margin-top: 5%;
+}
+
+.splash1{
+    position: absolute;
+    width: 77%;
+    height: auto;
+    opacity: 0.4;
+    margin-top: 45%;
+    margin-left: 6%;
+  
+}
+
+.so1{
+    position: absolute;
+    z-index: 2;
+    margin-left: 12.5%;
+    margin-top: 6.1%;
+    height: auto;
+    width: 13%;
+    opacity: 0.5;
+    padding-bottom: -20%;
+
+}
+
+.so2{
+    position: absolute;
+    z-index: 2;
+    margin-left: 28.2%;
+    margin-top: 6.1%;
+    height: auto;
+    width: 13%; 
+    opacity: 0.5;
+
+}
+
+.so3{
+    position: absolute;
+    z-index: 2;
+    margin-left: 13%;
+    margin-top: 43%;
+  height: auto;
+    width: 13%;
+    opacity: 0.5;
+
+}
+
+.so4{
+    position: absolute;
+    z-index: 2;
+    margin-left: 28.2%;
+    margin-top: 43%;
+      height: auto;
+    width: 13%;
+    opacity: 0.5;
+
+}
+
+.so5{
+    position: absolute;
+    z-index: 2;
+    margin-left: 49%;
+    margin-top: 6%;
+     height: auto;
+    width: 13%;
+    opacity: 0.5;
+ 
+}
+
+.so6{
+    position: absolute;
+    z-index: 2;
+    margin-left: 49%;
+    margin-top: 43%;
+    height: auto;
+    width: 13%; 
+    opacity: 0.5;
+   
+}
+.so7{
+    position: absolute;
+    z-index: 2;
+    margin-left: 64%;
+    margin-top: 6%;
+    height: auto;
+    width: 13%; 
+    opacity: 0.5;
+
+}
+.so8{
+    position: absolute;
+    z-index: 2;
+    margin-left: 64%;
+    margin-top: 43%;
+    height: auto;
+    width: 13%; 
+    opacity: 0.5;
+
+}
+
+.so1:hover {
+    background-color: yellow;
+      box-shadow: 0px 0px 10px 5px yellow;
+    cursor: pointer;
+}
+.so2:hover {
+    background-color: greenyellow;
+      box-shadow: 0px 0px 10px 5px greenyellow;
+    cursor: pointer;
+}
+.so3:hover {
+    background-color: indianred;
+      box-shadow: 0px 0px 10px 5px indianred;
+    cursor: pointer;
+}
+.so4:hover {
+    background-color: mediumpurple;
+      box-shadow: 0px 0px 10px 5px mediumpurple;
+    cursor: pointer;
+}
+.so5:hover {
+    background-color: dodgerblue;
+      box-shadow: 0px 0px 10px 5px dodgerblue;
+    cursor: pointer;
+}
+.so6:hover {
+    background-color: hotpink;
+      box-shadow: 0px 0px 10px 5px hotpink;
+    cursor: pointer;
+}
+.so7:hover {
+    background-color: green;
+      box-shadow: 0px 0px 10px 5px green;
+    cursor: pointer;
+}
+.so8:hover {
+    background-color: orange;
+      box-shadow: 0px 0px 10px 5px orange;
+    cursor: pointer;
+}
+
+.smartoknopic{
+  position: absolute;
+    bottom: 15%;
+   right: 1%;
+     width:20%;
+
+}
+
+
+.smartoknotxt{
+   position: absolute;
+    bottom: 10%;
+     right: 20%;
+     width:50%;
+}
+
+@media only screen and (max-width: 990px) {
+    .smartoknotxt {
+        display: none;
+    }
+
+
+.smartoknopic {
+        display: none;
+    }}
+
+.sdiv1{
+ background: -moz-linear-gradient(left, rgba(41,137,216,0) 0%, rgba(83,161,224,0.55) 50%, rgba(122,183,231,0) 96%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(41,137,216,0) 0%,rgba(83,161,224,0.55) 50%,rgba(122,183,231,0) 96%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(41,137,216,0) 0%,rgba(83,161,224,0.55) 50%,rgba(122,183,231,0) 96%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    z-index: 3;
+    position: absolute;
+    display: none;
+}
+
+.maly{
+    display: none;
+}
+
+@media only screen and (min-width: 990px) {
+    .sdiv1 {
+       
+        margin-left: -14%;
+    }}
+
+
+@media only screen and (max-width: 610px) {
+    .sdiv1 {
+      margin-top: -25%;
+      }
+
+
+.maly{
+    display: block;
+}
+}
+
+
+@media only screen and (max-width: 490px) {
+    .sdiv1 {
+         margin-top: -50%;
+        padding: 20px;
+    }}
+
+@media only screen and (max-width: 390px) {
+    .sdiv1 {
+         margin-top: -70%;
+    }}
