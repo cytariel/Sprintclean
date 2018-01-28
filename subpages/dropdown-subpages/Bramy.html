@@ -7,7 +7,7 @@
     <meta name="description" content="Strona Firmy">
     <meta name="author" content="...">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:300,400|Montserrat:600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400|Montserrat:600,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
@@ -68,26 +68,27 @@
         <!--fluid-container-->
 
         <div class="container fadeIn">
+             
+   
 
-
-
-            <!--rzad 1-->
-            <div class="row justify-iitems-center" style="margin-top:6%;">
-
-                <div class="col-5 offset-6">
-                    <a href="https://bim.wisniowski.pl/">   <img class="b1" src="../../img/companies/wis.png" alt="erkado" height="50px"> </a>
+        <!--rzad 1-->
+        <div class="row justify-iitems-center" style="margin-top:6%;">
+               <div class="col-12">  
+           
+            <h1 class="text-right">Bramy</h1>
+             </div>
+            </div>
+            
+          <div class="row">
+            <div class="col-9 offset-1">
+                <a href="https://bim.wisniowski.pl/">   <img class="b1" src="../../img/companies/wis.png" alt="erkado" height="100px"> </a>
+       
+                      
                 </div>
             </div>
-
-
-            <div class="row">
-                <div class="col-12">
-                    <center>
-                        <h1 class="text-right">Bramy</h1>
-                    </center>
-                </div>
-            </div>
-
+            
+             <div class="row justify-content-center">
+                <div class="col-xl-10 col-md-12">
             <div id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="card">
                     <div class="card-header" role="tab" id="headingone">
@@ -100,88 +101,100 @@
                     <div id="collapseone" class="collapse" role="tabpanel" aria-labelledby="headingone">
                         <div class="card-block">
                             <p class="p1">WIŚNIOWSKI to ponad 25 lat kompetencji w branży budowlanej. Nasze centrum technologiczno-produkcyjne zapewnia jakość i najwyższe standardy, a stałe doskonalenie personelu, produktów i linii technologicznych przyczyniają się do powstania produktów na najwyższym poziomie.</p>
-                            <p class="p1">Wytrwale realizują ich aspiracje i cele, którymi jest stały rozwój i osiągnięcie pozycji światowego lidera branży bram i ogrodzeń. Są skoncentrowani na stałym rozwoju we wszystkich obszarach własnej działalności, w pełni zachowując odpowiedzialność społeczną. </p>
-                            <p class="p1">Wychodzą naprzeciw wyzwaniom. Znają rynek i wyznaczają jego kierunki. Każdy proces i każde zadanie są dokładnie przemyślane i zrealizowane przy zastosowaniu najnowocześniejszych technologii. Potwierdzeniem jakości ich produktów są certyfikaty zgodności z aprobatami technicznymi oraz atesty zgodne z normami europejskimi potwierdzone certyfikatem CE.
-                        </div>
-                    </div>
-
-                    <!-- Button to Open the Modal -->
-                    <button type="button" class="btn btn-success btn-modal" data-toggle="modal" data-target="#wizytaModal">
+                        <p class="p1">Wytrwale realizują ich aspiracje i cele, którymi jest stały rozwój i osiągnięcie pozycji światowego lidera branży bram i ogrodzeń. Są skoncentrowani na stałym rozwoju we wszystkich obszarach własnej działalności, w pełni zachowując odpowiedzialność społeczną. </p>
+                        <p class= "p1">Wychodzą naprzeciw wyzwaniom. Znają rynek i wyznaczają jego kierunki. Każdy proces i każde zadanie są dokładnie przemyślane i zrealizowane przy zastosowaniu najnowocześniejszych technologii. Potwierdzeniem jakości ich produktów są certyfikaty zgodności z aprobatami technicznymi oraz atesty zgodne z normami europejskimi potwierdzone certyfikatem CE. 
+                             <center>
+                        <img src="../../img/produkty/001%20(1).jpg" height="200px" class="produkt">
+                        <img src="../../img/produkty/001%20(2).jpg" height="200px" class="produkt">
+                        <img src="../../img/produkty/001%20(3).jpg" height="200px" class="produkt">
+                       </center>
+                </div>
+               </div>
+              </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="bgdown"></div>
+                      
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-success btn-modal" data-toggle="modal" data-target="#wizytaModal">
  			 Umów wizytę!
 			</button>
-                    <div class="social">
-                        <ul>
-                            <li class="social-fb"><a href="#"><span class="social-text">Facebook</span><i class="social-icon fab fa-facebook-square"></i></a></li>
-                            <li class="social-gp"><a href="#"><span class="social-text">Google +</span><i class="social-icon fab fa-google-plus"></i></a></li>
-                            <li class="social-ig"><a href="#"><span class="social-text">Instagram</span><i class="social-icon fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- Modal Wizyty -->
-                    <div class="modal fade" id="wizytaModal">
-                        <div class="modal-dialog modal-md">
-                            <div class="modal-content ">
-
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Umów się na wizyte!</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <p class="mt-2 text-muted text-left">Proszę wypełnić poniższy formularz w celu podania niezbędnych danych do wizyty: </p>
-                                    <form action="./php/mail.php" method="post" enctype="text/plain" id="wizytaForm">
-                                        <div class="row">
-                                            <div class="col-sm-12 text-center">
-                                                <input type="text" id="imie" name="imie" placeholder="Imię" requiered="required">
-                                                <input onchange="formValidate()" class="mt-1" type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" requiered="required">
-                                                <input onchange="formValidate()" class="mt-1" type="text" id="email" name="email" placeholder="Email" requiered="required">
-                                                <input onchange="formValidate()" class="mt-1" type="text" id="tele" name="tele" placeholder="Numer telefonu" requiered="required"><br>
-                                                <input onchange="formValidate()" class="mt-1" type="text" id="adres" name="adres" placeholder="Adres" requiered="required"><br>
-                                                <input onchange="formValidate()" class="mt-1" type="number" id="ilosc" name="ilosc" placeholder="Ilość przedmiotów" requiered="required"><br>
-                                                <input onchange="formValidate()" class="mt-1" type="date" id="date" name="date" requiered="required"><br>
-                                                <textarea onchange="formValidate()" class="mt-3" name="uwagi" id="uwagi" placeholder="Wiadomość dla usługodawcy" requiered="required"></textarea>
-                                            </div>
-                                        </div>
-                                        <p class="mt-2 text-muted text-center">Data wizyty nie może być wcześniejsza niż 3 dni od dnia zgłoszenia.</p>
-                                        <p class="text-muted text-center">Wizyta zostanie potwierdzona telefonicznie dzień przed wizytą</p>
-                                    </form>
-
-                                </div>
-
-                                <!-- Modal Wizyty footer -->
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-success" id="mailsendBtn">Wyślij</button>
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Anuluj</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Modal Wizyty -->
-                    <!-- Modal Potwierdzenia -->
-                    <div class="modal fade" id="successModal">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content ">
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <p>Zgłoszenie zostało wysłane!</p>
-                                    <p>Zostanie ono potwierdzone telefonicznie lub mailowo w czasie nie dłuższym niż 2 dni.</p>
-                                    <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Modal Potwierdzenia -->
-
-
+                <div class="social">
+                    <ul>
+                        <li class="social-fb"><a href="#"><span class="social-text">Facebook</span><i class="social-icon fab fa-facebook-square"></i></a></li>
+                        <li class="social-gp"><a href="#"><span class="social-text">Google +</span><i class="social-icon fab fa-google-plus"></i></a></li>
+                        <li class="social-ig"><a href="#"><span class="social-text">Instagram</span><i class="social-icon fab fa-instagram"></i></a></li>
+                    </ul>
                 </div>
-                <!-- skrypty -->
+                <!-- Modal Wizyty -->
+                <div class="modal fade" id="wizytaModal">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content ">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Umów się na wizyte!</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <p class="mt-2 text-muted text-left">Proszę wypełnić poniższy formularz w celu podania niezbędnych danych do wizyty: </p>
+                                <form action="mailto:sprint.wizyty@gmail.com" method="post" enctype="text/plain" id="wizytaForm">
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <input onchange="formValidate()" type="text" id="imie" name="imie" placeholder="Imię" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="text" id="tele" name="tele" placeholder="Numer telefonu" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="text" id="adres" name="adres" placeholder="Adres" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="number" id="ilosc" name="ilosc" placeholder="Ilość przedmiotów" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="date" id="date" name="date" requiered="required"><br>
+                                            <textarea onchange="formValidate()" class="mt-3" name="uwagi" id="uwagi" placeholder="Wiadomość dla usługodawcy" requiered="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <p class="mt-2 text-muted text-center">Data wizyty nie może być wcześniejsza niż 3 dni od dnia zgłoszenia.</p>
+                                    <p class="text-muted text-center">Wizyta zostanie potwierdzona telefonicznie dzień przed wizytą</p>
+                                </form>
+
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#successModal" data-dismiss="modal">Wyślij</button>
 
 
-                <!--            <script type="text/javascript" src="../../js/jquery.min.js"></script>-->
-                <script type="text/javascript" src="../../js/app.js"></script>
-                <script type="text/javascript" src="../../js/popper.min.js"></script>
-                <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Anuluj</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Modal Wizyty -->
+                <!-- Modal Potwierdzenia -->
+                <div class="modal fade" id="successModal">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content ">
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <p>Zgłoszenie zostało wysłane!</p>
+                                <p>Zostanie ono potwierdzone telefonicznie lub mailowo w czasie nie dłuższym niż 2 dni.</p>
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Modal Potwierdzenia -->
+
+
+            </div>
+            <!-- skrypty -->
+
+
+            <!--            <script type="text/javascript" src="../../js/jquery.min.js"></script>-->
+            <script type="text/javascript" src="../../js/app.js"></script>
+            <script type="text/javascript" src="../../js/popper.min.js"></script>
+            <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
 
 </body>
 

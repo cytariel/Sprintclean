@@ -65,14 +65,28 @@
         </div>
         <!--fluid-container-->
 
-        <div class="container">
+        <div class="container fadeIn">
 
-            <div class="row">
+             <div class="row justify-iitems-center" style="margin-top:6%;">
+       
                 <div class="col-12">
-                    <center>
-                        <h2>Okna Aluminiowe</h2><img src="../../img/companies/wis.png" /></center>
+               
+                      <h1 class="text-right">Okna aluminiowe</h1>
                 </div>
+           </div>
+            
+             <div class="row">
+            <div class="col-9 offset-1">
+                <a href="http://kmt.com.pl/pl/">   <img class="b1" src="../../img/companies/ALUDOOR.PNG" alt="KMT" height="75px"> </a>
+                <a href="http://www.delta.net.pl/">   <img class="b1" src="../../img/companies/aluplast.png" alt="Delta" height="90px"> </a>
+              
             </div>
+          </div>
+
+             <div class="row justify-content-center">
+                <div class="col-xl-10 col-md-12">
+
+             
 
             <div id="accordion" role="tablist" aria-multiselectable="true">
                   <div class="card">
@@ -95,8 +109,31 @@
                  </div>
                 </div>
                 </div>
+                 <div class="card">
+                <div class="card-header" role="tab" id="headingfive">
+                    <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+          <h2>Aluplast</h2>
+        </a>
+                    </h5>
+                </div>
+                <div id="collapsefive" class="collapse" role="tabpanel" aria-labelledby="headingfive">
+                    <div class="card-block">
+                        <p class="p1"> Polska spółka utworzona w 1995 roku w Poznaniu zatrudniała na początku swojej działalności 8 osób i osiągnęła obrót na poziomie 4 mln PLN. Obecnie firma zatrudnia ok. 400 osób i realizuje obroty na poziomie ok. 400 mln PLN. Na powierzchni ponad 60 000 m2 powstał nowoczesny zakład produkcyjny, a ciągłe inwestycje w bazę technologiczną gwarantują najwyższy poziom techniczny oferowanych rozwiązań. Osiemnaście lat aktywności firmy aluplast w naszym kraju pokazuje, że konsekwentnie realizowana prorozwojowa polityka może gwarantować długookresowy sukces.</p>
+                        <hr>
+                        <p class="p1"> Jednym z fundamentów filozofii firmy jest innowacyjność, przejawiająca się w integrowaniu poszczególnych linii produktów w systemy i ich stałym rozwijaniu, co umożliwia ich ciągłą rozbudowę i pozwala posiadać w ofercie rozwiązania najlepiej dostosowane do potrzeb rynku. Tym samym rozwijając istniejące systemy aluplast przesuwa je w górę wyznaczając stale nowe standardy. Technologiczna przewaga stanowi podstawę strategii produktów aluplast. Przywództwo technologiczne jest przy tym ściśle związane z ciągłym koncentrowaniem się na kliencie i jego potrzebach, które są często bodźcem do ulepszania naszych produktów. </p>
+                        <hr>
 
+                        <p class="p1">To właśnie bogactwo oferty i jej innowacyjność są jedną z przyczyn osiągnięcia przez firmę aluplast pozycji lidera w Polsce. Praktycznie co roku wprowadzane są na rynek nowe rozwiązania, umożliwiające zwiększanie konkurencyjności współpracujących z nami producentów okien. Potwierdzeniem tego faktu są wyniki, realizowanych od kilku lat przez Centrum Analiz Branżowych, badań opinii producentów okien o dostawcach profili PVC. Firma aluplast jest w nich najwyżej oceniania w kategoriach: najszersza oferta, oferta o najlepszej relacji ceny do jakości oraz najbardziej innowacyjna firma. </p>
 
+                      </div>
+                    </div>
+                 </div>
+                </div>
+              </div>
+             </div> 
+            </div> 
+            <div class="bgdown"></div>
                 <!-- Button to Open the Modal -->
                 <button type="button" class="btn btn-success btn-modal" data-toggle="modal" data-target="#wizytaModal">
  			 Umów wizytę!
@@ -120,32 +157,33 @@
                             </div>
 
                             <!-- Modal body -->
-                <div class="modal-body">
-                    <p class="mt-2 text-muted text-left">Proszę wypełnić poniższy formularz w celu podania niezbędnych danych do wizyty: </p>
-                    <form action="./php/mail.php" method="post" enctype="text/plain" id="wizytaForm">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <input type="text" id="imie" name="imie" placeholder="Imię" requiered="required">
-                                <input onchange="formValidate()" class="mt-1" type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" requiered="required">
-                                 <input onchange="formValidate()" class="mt-1" type="text" id="email" name="email" placeholder="Email" requiered="required">
-                                <input onchange="formValidate()" class="mt-1" type="text" id="tele" name="tele" placeholder="Numer telefonu" requiered="required"><br>
-                                <input onchange="formValidate()" class="mt-1" type="text" id="adres" name="adres" placeholder="Adres" requiered="required"><br>
-                                <input onchange="formValidate()" class="mt-1" type="number" id="ilosc" name="ilosc" placeholder="Ilość przedmiotów" requiered="required"><br>
-                                <input onchange="formValidate()" class="mt-1" type="date" id="date" name="date" requiered="required"><br>
-                                <textarea onchange="formValidate()" class="mt-3" name="uwagi" id="uwagi" placeholder="Wiadomość dla usługodawcy" requiered="required"></textarea>
+                            <div class="modal-body">
+                                <p class="mt-2 text-muted text-left">Proszę wypełnić poniższy formularz w celu podania niezbędnych danych do wizyty: </p>
+                                <form action="mailto:sprint.wizyty@gmail.com" method="post" enctype="text/plain" id="wizytaForm">
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <input onchange="formValidate()" type="text" id="imie" name="imie" placeholder="Imię" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="text" id="tele" name="tele" placeholder="Numer telefonu" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="text" id="adres" name="adres" placeholder="Adres" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="number" id="ilosc" name="ilosc" placeholder="Ilość przedmiotów" requiered="required"><br>
+                                            <input onchange="formValidate()" class="mt-1" type="date" id="date" name="date" requiered="required"><br>
+                                            <textarea onchange="formValidate()" class="mt-3" name="uwagi" id="uwagi" placeholder="Wiadomość dla usługodawcy" requiered="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <p class="mt-2 text-muted text-center">Data wizyty nie może być wcześniejsza niż 3 dni od dnia zgłoszenia.</p>
+                                    <p class="text-muted text-center">Wizyta zostanie potwierdzona telefonicznie dzień przed wizytą</p>
+                                </form>
+
                             </div>
-                        </div>
-                        <p class="mt-2 text-muted text-center">Data wizyty nie może być wcześniejsza niż 3 dni od dnia zgłoszenia.</p>
-                        <p class="text-muted text-center">Wizyta zostanie potwierdzona telefonicznie dzień przed wizytą</p>
-                    </form>
 
-                </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#successModal" data-dismiss="modal">Wyślij</button>
 
-                <!-- Modal Wizyty footer -->
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-success" id="mailsendBtn" >Wyślij</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Anuluj</button>
-                </div>
+
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Anuluj</button>
+                            </div>
                         </div>
                     </div>
                 </div>
