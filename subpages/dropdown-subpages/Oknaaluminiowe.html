@@ -120,33 +120,32 @@
                             </div>
 
                             <!-- Modal body -->
-                            <div class="modal-body">
-                                <p class="mt-2 text-muted text-left">Proszę wypełnić poniższy formularz w celu podania niezbędnych danych do wizyty: </p>
-                                <form action="mailto:sprint.wizyty@gmail.com" method="post" enctype="text/plain" id="wizytaForm">
-                                    <div class="row">
-                                        <div class="col-sm-12 text-center">
-                                            <input onchange="formValidate()" type="text" id="imie" name="imie" placeholder="Imię" requiered="required"><br>
-                                            <input onchange="formValidate()" class="mt-1" type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" requiered="required"><br>
-                                            <input onchange="formValidate()" class="mt-1" type="text" id="tele" name="tele" placeholder="Numer telefonu" requiered="required"><br>
-                                            <input onchange="formValidate()" class="mt-1" type="text" id="adres" name="adres" placeholder="Adres" requiered="required"><br>
-                                            <input onchange="formValidate()" class="mt-1" type="number" id="ilosc" name="ilosc" placeholder="Ilość przedmiotów" requiered="required"><br>
-                                            <input onchange="formValidate()" class="mt-1" type="date" id="date" name="date" requiered="required"><br>
-                                            <textarea onchange="formValidate()" class="mt-3" name="uwagi" id="uwagi" placeholder="Wiadomość dla usługodawcy" requiered="required"></textarea>
-                                        </div>
-                                    </div>
-                                    <p class="mt-2 text-muted text-center">Data wizyty nie może być wcześniejsza niż 3 dni od dnia zgłoszenia.</p>
-                                    <p class="text-muted text-center">Wizyta zostanie potwierdzona telefonicznie dzień przed wizytą</p>
-                                </form>
-
+                <div class="modal-body">
+                    <p class="mt-2 text-muted text-left">Proszę wypełnić poniższy formularz w celu podania niezbędnych danych do wizyty: </p>
+                    <form action="./php/mail.php" method="post" enctype="text/plain" id="wizytaForm">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <input type="text" id="imie" name="imie" placeholder="Imię" requiered="required">
+                                <input onchange="formValidate()" class="mt-1" type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" requiered="required">
+                                 <input onchange="formValidate()" class="mt-1" type="text" id="email" name="email" placeholder="Email" requiered="required">
+                                <input onchange="formValidate()" class="mt-1" type="text" id="tele" name="tele" placeholder="Numer telefonu" requiered="required"><br>
+                                <input onchange="formValidate()" class="mt-1" type="text" id="adres" name="adres" placeholder="Adres" requiered="required"><br>
+                                <input onchange="formValidate()" class="mt-1" type="number" id="ilosc" name="ilosc" placeholder="Ilość przedmiotów" requiered="required"><br>
+                                <input onchange="formValidate()" class="mt-1" type="date" id="date" name="date" requiered="required"><br>
+                                <textarea onchange="formValidate()" class="mt-3" name="uwagi" id="uwagi" placeholder="Wiadomość dla usługodawcy" requiered="required"></textarea>
                             </div>
+                        </div>
+                        <p class="mt-2 text-muted text-center">Data wizyty nie może być wcześniejsza niż 3 dni od dnia zgłoszenia.</p>
+                        <p class="text-muted text-center">Wizyta zostanie potwierdzona telefonicznie dzień przed wizytą</p>
+                    </form>
 
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#successModal" data-dismiss="modal">Wyślij</button>
+                </div>
 
-
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Anuluj</button>
-                            </div>
+                <!-- Modal Wizyty footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" id="mailsendBtn" >Wyślij</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Anuluj</button>
+                </div>
                         </div>
                     </div>
                 </div>
