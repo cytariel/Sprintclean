@@ -178,7 +178,7 @@
 
 .smartoknopic{
   position: absolute;
-    bottom: 15%;
+    bottom: 30%;
    right: 1%;
      width:20%;
 
@@ -187,8 +187,8 @@
 
 .smartoknotxt{
    position: absolute;
-    bottom: 10%;
-     right: 20%;
+    bottom: 20%;
+     right: 30%;
      width:50%;
 }
 
