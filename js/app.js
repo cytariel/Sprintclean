@@ -49,18 +49,46 @@ function formValidate() {
     if ($(id).val() == "") {
         $(id).removeClass("correct");
         $(id).addClass("wrong");
-        $(id).next().remove('.mark');
-        $(id).after('<i class="fas fa-times mark mark-wrong" ></i>');
 
     } else if ($(id).val() != "") {
         $(id).removeClass("wrong");
         $(id).addClass("correct");
-        $(id).next().remove('.mark');
-        $(id).next().remove('.mark')
-        $(id).after('<i class="fas fa-check mark mark-ok"></i>');
+
+    }
+    var okNr = $('.correct').length;
+    console.log(okNr);
+    if (okNr >= 7) {
+        $('#mailsendBtn').attr('disabled', false);
+        $('#mailsendBtn').removeClass('btn-disabled');
+        $('#mailsendBtn').addClass('pulse');
+    }
+    if (okNr < 7) {
+        $('#mailsendBtn').attr('disabled', true);
+        $('#mailsendBtn').addClass('btn-disabled');
+        $('#mailsendBtn').removeClass('pulse');
+
     }
 };
-$(function (){
-$("#phone").mask("999-999-999");
-$("#tele").mask("999-999-999");
-     })
+$(function () {
+    $("#phone").mask("999-999-999");
+    $("#tele").mask("999-999-999");
+})
+$('input:text,input[type=number],input[type=date],textarea').change(function () {
+    formValidate();
+});
+
+$(window).ready(function () {
+    $('#mailsendBtn').attr('disabled', false);
+    $('#mailsendBtn').addClass('btn-disabled');
+})
+
+//skrypt wysyłki maila
+$('#mailsendBtn').click(function () {
+            if ($('#mailsendBtn').hasClass('btn-disabled') == false) {
+                $('#mailsendBtn').attr('data-toggle', "modal").attr('data-target', "#successModal").attr('data-dismiss', 'modal');
+                console.log("sending");
+                $.ajax({
+                        type: "POST",
+                        url: "./php/mail.php",
+                    }
+                )}})
